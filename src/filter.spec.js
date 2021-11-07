@@ -13,5 +13,9 @@ describe('Filter', () => {
     it('Should return empty array if the condition is false', () => {
         expect(filter([1,2,3], x => false)).toEqual([]);
     });
+
+    it('Should return number only greater than one in an array', () => {
+        expect(filter([1,2,3], x => x > 1)).toEqual([2, 3]);
+    });
 })
   
