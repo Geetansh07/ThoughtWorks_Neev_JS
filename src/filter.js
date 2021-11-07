@@ -10,9 +10,10 @@ const filter = (array, functions) => {
             const does_item_satisfy_the_condition = functions(item_in_array, i);
 
             if (does_item_satisfy_the_condition) {
-            new_filtered_array.push(item_in_array);
+                new_filtered_array.push(item_in_array);
             }
         }
+        return new_filtered_array;
     }
 }
 
