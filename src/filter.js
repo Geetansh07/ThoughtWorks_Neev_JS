@@ -3,6 +3,15 @@ const filter = (array, functions) => {
     if (array.length === 0){
         return []
     }
+    if (functions === "filterUpperCase") {
+        const new_filtered_upper_case_array = [];
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] >= 'A' && array[i] <= 'Z') {
+                new_filtered_upper_case_array.push(array[i])
+            }
+        }
+        return new_filtered_upper_case_array;
+    }
     else{
         const new_filtered_array = [];
         for (let i = 0; i < array.length; i++) {

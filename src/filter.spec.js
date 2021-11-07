@@ -17,5 +17,9 @@ describe('Filter', () => {
     it('Should return number only greater than one in an array', () => {
         expect(filter([1,2,3], x => x > 1)).toEqual([2, 3]);
     });
+
+    it('Should return only upperCase letters in an array', () => {
+        expect(filter(['a','B','c','D'], "filterUpperCase")).toEqual(['B', 'D']);
+    });
 })
   
